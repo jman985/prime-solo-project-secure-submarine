@@ -10,7 +10,7 @@ const passport = require('./strategies/user.strategy');
 // Route includes
 const userRouter = require('./routes/user.router');
 const secretsRouter = require('./routes/secrets.router');
-
+require('dotenv').config();
 
 // Body parser middleware
 app.use(bodyParser.json());
